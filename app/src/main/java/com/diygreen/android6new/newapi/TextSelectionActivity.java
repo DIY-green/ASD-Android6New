@@ -20,6 +20,7 @@ public class TextSelectionActivity extends AppCompatActivity {
     private ActionMode mActionMode;
 
     private TextView mTestTV;
+    private ActionMode.Callback2 mCallback2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,30 +28,29 @@ public class TextSelectionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_textselection);
 
         initView();
-        initListener();
+        initData();
     }
 
     private void initView() {
         this.mTestTV = (TextView) findViewById(R.id.tv_test);
-    }
-
-    private void initListener() {
         this.mTestTV.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public boolean onLongClick(View view) {
+            public boolean onLongClick(View v) {
                 testTextSelection();
-                view.setSelected(true);
                 return false;
             }
         });
     }
 
     @TargetApi(23)
-    private void testTextSelection() {
-        mActionMode = startActionMode(new ActionMode.Callback2() {
+    private void initData() {
+        mCallback2 = new ActionMode.Callback2() {
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
                 MenuInflater inflater = mode.getMenuInflater();
+                if (inflater == null) {
+                    return false;
+                }
                 inflater.inflate(R.menu.actionmode_menu, menu);
                 return true;
             }
@@ -64,7 +64,7 @@ public class TextSelectionActivity extends AppCompatActivity {
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 Toast.makeText(TextSelectionActivity.this, item.getTitle(), Toast.LENGTH_LONG).show();
                 mode.finish();
-                return true;
+                return false;
             }
 
             @Override
@@ -72,12 +72,19 @@ public class TextSelectionActivity extends AppCompatActivity {
 
             }
 
+            // 控制这个浮动菜单的位置
             @Override
             public void onGetContentRect(ActionMode mode, View view, Rect outRect) {
                 super.onGetContentRect(mode, view, outRect);
             }
 
-        }, ActionMode.TYPE_FLOATING);
+        };
+        this.mTestTV.setCustomSelectionActionModeCallback(mCallback2);
+    }
+
+    @TargetApi(23)
+    private void testTextSelection() {
+        mActionMode = startActionMode(mCallback2, ActionMode.TYPE_FLOATING);
     }
 
 }

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.diygreen.android6new.newapi.CameraTestActivity;
+import com.diygreen.android6new.newapi.ColorStateListActivity;
 import com.diygreen.android6new.newapi.DirectShareActivity;
 import com.diygreen.android6new.newapi.DynamicPermissionActivity;
 import com.diygreen.android6new.newapi.TextSelectionActivity;
@@ -28,6 +30,12 @@ public class Android6NewApiActivity extends AppCompatActivity {
                 break;
             case R.id.btn_directshare:
                 overlay(DirectShareActivity.class);
+                break;
+            case R.id.btn_camera2api:
+                overlay(CameraTestActivity.class);
+                break;
+            case R.id.btn_colorstatelist:
+                overlay(ColorStateListActivity.class);
                 break;
         }
     }

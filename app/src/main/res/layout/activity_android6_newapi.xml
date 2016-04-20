@@ -35,4 +35,23 @@
         android:layout_below="@+id/btn_textselection"
         android:layout_alignParentStart="true"
         android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_camera2api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera 2 New API"
+        android:layout_below="@+id/btn_directshare"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_colorstatelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ColorStateList"
+        android:layout_below="@+id/btn_camera2api"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:onClick="onClick" />
 </RelativeLayout>

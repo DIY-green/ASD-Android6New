@@ -22,6 +22,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,9 +36,12 @@
         <activity android:name=".newapi.ShareActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
+
             <meta-data
                 android:name="android.service.chooser.chooser_target_service"
                 android:value=".newapi.DirectShareService" />
@@ -52,6 +56,8 @@
             </intent-filter>
         </service>
 
+        <activity android:name=".newapi.CameraTestActivity" />
+        <activity android:name=".newapi.ColorStateListActivity"></activity>
     </application>
 
 </manifest>

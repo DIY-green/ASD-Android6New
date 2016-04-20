@@ -2,10 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/menuitem_new"
         android:title="New"/>
     <item
-        android:id="@+id/menuitem_open"
-        android:title="open"/>
+        android:title="Open"/>
+    <item
+        android:title="Cut"/>
+    <item
+        android:title="Copy"/>
+    <group>
+        <item android:title="Android" />
+        <item android:title="iOS" />
+        <item android:title="Java" />
+        <item android:title="OC" />
+    </group>
 
 </menu>  
