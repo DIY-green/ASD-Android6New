@@ -57,7 +57,11 @@
         </service>
 
         <activity android:name=".newapi.CameraTestActivity" />
-        <activity android:name=".newapi.ColorStateListActivity"></activity>
+        <activity android:name=".newapi.ColorStateListActivity" />
+        <activity android:name=".newwidget2.AppBarLayoutActivity" />
+        <activity android:name=".newwidget1.FloatingActionButtonActivity" />
+        <activity android:name=".newwidget1.TextInputLayoutActivity" />
+        <activity android:name=".newwidget1.SnackBarActivity"></activity>
     </application>
 
 </manifest>

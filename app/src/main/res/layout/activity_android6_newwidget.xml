@@ -9,4 +9,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.diygreen.android6new.Android6NewWidgetActivity">
 
+    <Button
+        android:id="@+id/btn_floatingactionbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FloatingActionButton"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextInputLayout"
+        android:layout_below="@+id/btn_floatingactionbutton"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/btn_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SnackBar"
+        android:layout_below="@+id/btn_textinputlayout"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:onClick="onClick"  />
 </RelativeLayout>
