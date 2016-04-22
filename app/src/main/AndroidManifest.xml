@@ -58,10 +58,18 @@
 
         <activity android:name=".newapi.CameraTestActivity" />
         <activity android:name=".newapi.ColorStateListActivity" />
-        <activity android:name=".newwidget2.AppBarLayoutActivity" />
+        <activity android:name=".newwidget3.AppBarLayoutActivity" />
         <activity android:name=".newwidget1.FloatingActionButtonActivity" />
         <activity android:name=".newwidget1.TextInputLayoutActivity" />
-        <activity android:name=".newwidget1.SnackBarActivity"></activity>
+        <activity android:name=".newwidget1.SnackBarActivity" />
+        <activity android:name=".newwidget2.TabLayoutActivity" />
+        <activity android:name=".newwidget2.TabLayoutDemo1Activity" />
+        <activity android:name=".newwidget2.TabLayoutDemo2Activity" />
+        <activity android:name=".newwidget2.TabLayoutDemo3Activity" />
+        <activity android:name=".newwidget2.TabLayoutDemo4Activity" />
+        <activity android:name=".newwidget2.TabLayoutDemo5Activity" />
+        <activity android:name=".newwidget2.NavigationViewActivity"
+            android:theme="@style/BaseTheme"/>
     </application>
 
 </manifest>

@@ -9,6 +9,8 @@ import android.view.View;
 import com.diygreen.android6new.newwidget1.FloatingActionButtonActivity;
 import com.diygreen.android6new.newwidget1.SnackBarActivity;
 import com.diygreen.android6new.newwidget1.TextInputLayoutActivity;
+import com.diygreen.android6new.newwidget2.NavigationViewActivity;
+import com.diygreen.android6new.newwidget2.TabLayoutActivity;
 
 public class Android6NewWidgetActivity extends AppCompatActivity {
 
@@ -28,6 +30,15 @@ public class Android6NewWidgetActivity extends AppCompatActivity {
                 break;
             case R.id.btn_snackbar:
                 overlay(SnackBarActivity.class);
+                break;
+            case R.id.btn_appbarlayout:
+                overlay(SnackBarActivity.class);
+                break;
+            case R.id.btn_tablayout:
+                overlay(TabLayoutActivity.class);
+                break;
+            case R.id.btn_navigationview:
+                overlay(NavigationViewActivity.class);
                 break;
         }
     }

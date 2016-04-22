@@ -1,4 +1,4 @@
-package com.diygreen.android6new.newwidget2;
+package com.diygreen.android6new.newwidget3;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
