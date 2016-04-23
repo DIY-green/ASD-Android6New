@@ -29,7 +29,6 @@
                 </group>
             </menu>
         </item>
-
         <item
             android:id="@+id/drawer_settings"
             android:icon="@mipmap/ic_fullscreen_black"
