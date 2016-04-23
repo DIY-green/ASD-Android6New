@@ -40,18 +40,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AppBarLayout"
-        android:id="@+id/btn_appbarlayout"
-        android:layout_below="@+id/btn_snackbar"
-        android:textAllCaps="false"
-        android:onClick="onClick" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="TabLayout"
         android:id="@+id/btn_tablayout"
-        android:layout_below="@+id/btn_appbarlayout"
+        android:layout_below="@+id/btn_snackbar"
         android:textAllCaps="false"
         android:onClick="onClick" />
 
@@ -61,7 +52,55 @@
         android:text="NavigationView"
         android:id="@+id/btn_navigationview"
         android:layout_below="@+id/btn_tablayout"
+        android:textAllCaps="false"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CoordinatorLayout"
+        android:id="@+id/btn_coordinatorlayout"
+        android:layout_below="@+id/btn_navigationview"
         android:layout_alignParentStart="true"
         android:textAllCaps="false"
         android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_appbarlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AppBarLayout1"
+        android:layout_below="@+id/btn_coordinatorlayout"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/btn_appbarlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AppBarLayout2"
+        android:layout_below="@+id/btn_appbarlayout1"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CollapsiingToolbarLayout1"
+        android:id="@+id/btn_collapsingtoolbarlayout1"
+        android:layout_below="@+id/btn_appbarlayout2"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CollapsingToolbarLayout2"
+        android:id="@+id/btn_collapsingtoolbarlayout2"
+        android:layout_below="@+id/btn_collapsingtoolbarlayout1"
+        android:textAllCaps="false"
+        android:onClick="onClick"  />
 </RelativeLayout>
